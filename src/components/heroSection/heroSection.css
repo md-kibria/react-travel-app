@@ -85,6 +85,10 @@
     box-shadow: 5px 5px 10px grey;
 }
 
+.heroBtns button:focus {
+    outline: none;
+}
+
 .heroBtns button:last-child:hover {
     background-color: transparent;
     color: #ff8f52;
