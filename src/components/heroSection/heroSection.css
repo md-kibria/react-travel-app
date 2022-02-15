@@ -1,0 +1,92 @@
+.heroSection {
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+    /* z-index: -1; */
+}
+
+.heroSection img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.heroSection video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    position: fixed;
+}
+
+.heroContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 111;
+}
+
+.heroContainer h1 {
+    color: #ffc83d;
+    font-size: 37px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.heroContainer p {
+    color: #e4bb54;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.heroBtns {
+    margin: 10px 0;
+    display: flex;
+}
+
+.heroBtns button {
+    margin: 0 5px;
+    padding: 7px 12px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #ff8f52;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 300ms;
+}
+
+.heroBtns button i {
+    padding-right: 2px;
+}
+
+.heroBtns button:last-child {
+    background-color: #fff;
+    color: #000;
+}
+
+.heroBtns button:hover {
+    background-color: #ff8f52;
+    color: #000;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.heroBtns button:last-child:hover {
+    background-color: transparent;
+    color: #ff8f52;
+    border-color: #ff8f52;
+}

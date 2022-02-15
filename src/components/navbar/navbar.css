@@ -1,0 +1,123 @@
+.navbar {
+    height: 70px;
+    width: 100%;
+    background-color: #5e42ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    z-index: 888;
+    overflow: hidden;
+    top: 0;
+}
+
+.nav-logo {
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.nav-icon {
+    font-size: 25px !important;
+    color: #fff;
+}
+
+.nav-items {
+    height: calc(100% - 70px);
+    width: 100%;
+    background: #907aff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    left: 100%;
+    top: 70px;
+    transition: .3s;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-show {
+    left: 0;
+}
+
+.nav-item {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 18px;
+    display: block;
+}
+
+.nav-item:hover {
+    background: cornsilk;
+}
+
+.nav-item:hover .nav-link {
+    color: #242424;
+}
+
+@media (min-width: 860px) {
+
+    .nav-icon {
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav-items-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-items {
+        background: transparent;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .nav-item {
+        height: 70px;
+        width: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .nav-item:hover {
+        background: none;
+        border-bottom-color:#fff;
+    }
+
+    .nav-item:hover .nav-link {
+        color: #fff;
+    }
+}
